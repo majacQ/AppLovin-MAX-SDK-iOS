@@ -1,5 +1,111 @@
 # Changelog
 
+## 4.22.0.0
+* Certified with UnityAds SDK 4.22.0.
+
+## 4.21.0.1
+* Add support for [adaptive banners](https://support.axon.ai/en/max/ios/ad-formats/banner-and-mrec-ads#adaptive-banners) & [inline adaptive banners](https://support.axon.ai/en/max/ios/ad-formats/banner-and-mrec-ads#inline-adaptive-banners). MRECs are not supported. Requires AppLovin MAX SDK 13.2.0 or higher.
+
+## 4.21.0.0
+* Certified with UnityAds SDK 4.21.0.
+
+## 4.20.1.0
+* Certified with UnityAds SDK 4.20.1.
+
+## 4.20.0.1
+* Fixed adapter versioning for SPM
+
+## 4.20.0.0
+* Certified with UnityAds SDK 4.20.0.
+
+## 4.19.0.1
+* Update to use new UnityAds initialization, load/show, banner, privacy, and signal APIs.
+
+## 4.19.0.0
+* Certified with UnityAds SDK 4.19.0.
+
+## 4.18.1.0
+* Certified with UnityAds SDK 4.18.1.
+
+## 4.18.0.0
+* Certified with UnityAds SDK 4.18.0.
+* Updated minimum Xcode requirement to 26.0.1 to match UnityAds SDK.
+
+## 4.17.0.0
+* Certified with UnityAds SDK 4.17.0.
+
+## 4.16.6.0
+* Certified with UnityAds SDK 4.16.6.
+
+## 4.16.5.0
+* Certified with UnityAds SDK 4.16.5.
+
+## 4.16.4.0
+* Certified with UnityAds SDK 4.16.4.
+
+## 4.16.3.0
+* Certified with UnityAds SDK 4.16.3.
+
+## 4.16.2.0
+* Certified with UnityAds SDK 4.16.2.
+
+## 4.16.1.0
+* Certified with UnityAds SDK 4.16.1.
+
+## 4.16.0.0
+* Certified with UnityAds SDK 4.16.0.
+* Updated the minimum required iOS version to 13.0 in Pod Spec to match UnityAds SDK.
+
+## 4.15.1.1
+* Distributed as a static framework within the XCFramework.
+
+## 4.15.1.0
+* Certified with UnityAds SDK 4.15.1.
+
+## 4.15.0.0
+* Certified with UnityAds SDK 4.15.0.
+* Updated minimum Xcode requirement to 16.1 to match UnityAds SDK.
+* Updated to use Unity Ads's new `+[UnityAds getTokenWith:completion:]` API that supports Ad Format for signal collection.
+
+## 4.14.2.0
+* Certified with UnityAds SDK 4.14.2.
+
+## 4.14.1.0
+* Certified with UnityAds SDK 4.14.1.
+* Removed deprecated code paths based on the minimum supported AppLovin MAX SDK version 13.0.0.
+
+## 4.14.0.0
+* Certified with UnityAds SDK 4.14.0.
+
+## 4.13.2.0
+* Certified with UnityAds SDK 4.13.2.
+
+## 4.13.1.0
+* Certified with UnityAds SDK 4.13.1.
+
+## 4.13.0.0
+* Certified with UnityAds SDK 4.13.0.
+
+## 4.12.5.0
+* Certified with UnityAds SDK 4.12.5.
+* Removed redundant log output when initialization was already completed.
+
+## 4.12.4.0
+* Certified with UnityAds SDK 4.12.4.
+
+## 4.12.3.0
+* Certified with UnityAds SDK 4.12.3.
+
+## 4.12.2.1
+* Requires minimum AppLovin MAX SDK version be 13.0.0.
+* Removed COPPA support.
+
+## 4.12.2.0
+* Certified with UnityAds SDK 4.12.2.
+
+## 4.12.1.0
+* Certified with UnityAds SDK 4.12.1.
+
 ## 4.12.0.0
 * Certified with UnityAds SDK 4.12.0.
 

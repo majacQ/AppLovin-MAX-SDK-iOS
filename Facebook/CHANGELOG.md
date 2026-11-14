@@ -1,5 +1,66 @@
 # Changelog
 
+## 6.22.1.0
+* Certified with Facebook SDK 6.22.1.
+
+## 6.22.0.4
+* Fixed interstitial and rewarded ads not firing display failed callbacks when Facebook reports error 9001 ("Ad could not be presented") during ad show.
+
+## 6.22.0.3
+* Fixed adapter versioning for SPM
+
+## 6.22.0.2
+* Updated minimum iOS version to 15.0 in Swift Package Manager.
+
+## 6.22.0.1
+* Migrated native AdOptions rendering to Facebook's preferred position API.
+
+## 6.22.0.0
+* Certified with Facebook SDK 6.22.0.
+* Updated minimum iOS version to 15.0 to match Facebook SDK.
+
+## 6.21.1.0
+* Certified with Facebook SDK 6.21.1.
+
+## 6.21.0.0
+* Certified with Facebook SDK 6.21.0.
+* Updated minimum iOS version to 13.0 to match Facebook SDK.
+* Updated minimum Xcode requirement to 26.0 to match Facebook SDK.
+* Specify Swift version 6.0 in the podspec to succesfully publish the Pod.
+* Distributed as a static framework within the XCFramework.
+
+## 6.20.1.0
+* Certified with Facebook SDK 6.20.1.
+
+## 6.20.0.0
+* Certified with Facebook SDK 6.20.0.
+* Removed deprecated code paths based on the minimum supported AppLovin MAX SDK version 13.0.0.
+* Updated ad display failed error code.
+
+## 6.17.1.0
+* Certified with Facebook SDK 6.17.1.
+
+## 6.17.0.0
+* Certified with Facebook SDK 6.17.0.
+
+## 6.16.0.1
+* Remove support for rewarded interstitial ads.
+
+## 6.16.0.0
+* Certified with Facebook SDK 6.16.0. (Unity adapter to be released after Unity Cloud Build has support for Xcode 16.0)
+* Updated minimum Xcode requirement to 16.0 to match Facebook SDK.
+* Simplified API calls by removing selector checks; direct API calls are now safe with the updated min SDK version.
+* Removed redundant log output when initialization was already completed.
+
+## 6.15.2.1
+* Requires minimum AppLovin MAX SDK version be 13.0.0.
+* Removed COPPA support.
+* Remove deprecated native API usages.
+
+## 6.15.2.0
+* Certified with Facebook SDK 6.15.2.
+* Updated minimum Xcode requirement to 15.3 to match Facebook SDK.
+
 ## 6.15.1.0
 * Certified with Facebook SDK 6.15.1.
 * Updated minimum Xcode requirement to 15.0.

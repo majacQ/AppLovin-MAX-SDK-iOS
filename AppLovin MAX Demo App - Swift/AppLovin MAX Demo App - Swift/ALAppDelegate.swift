@@ -6,11 +6,11 @@
 //  Copyright © 2019 AppLovin. All rights reserved.
 //
 
-import Adjust
+import AdjustSdk
 import AppLovinSDK
 import UIKit
 
-class ALAppDelegate: UIResponder, UIApplicationDelegate
+class ALAppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelegate
 {
     // If you want to test your own AppLovin SDK key, change the value here and update the bundle identifier in the xcodeproj.
     let YOUR_SDK_KEY = "05TMDQ5tZabpXQ45_UTbmEGNUtVAzSTzT6KmWQc5_CuWdzccS4DCITZoL3yIWUG3bbq60QC_d4WF28tUC4gVTF"
@@ -37,7 +37,7 @@ class ALAppDelegate: UIResponder, UIApplicationDelegate
             
             // Initialize Adjust SDK
             let adjustConfig = ADJConfig(appToken: "{YourAppToken}", environment: ADJEnvironmentSandbox)
-            Adjust.appDidLaunch(adjustConfig)
+            Adjust.initSdk(adjustConfig)
         }
         
         let barTintColor = UIColor.init(red: 10 / 255.0, green: 131 / 255.0, blue: 170 / 255.0, alpha: 1.0)

@@ -1,5 +1,75 @@
 # Changelog
 
+## 3.1.1.2
+* Pass mediation name and version to the Line SDK via `[FADAdSlotConfig setMediationName]`.
+
+## 3.1.1.1
+* Fixed adapter versioning for SPM
+
+## 3.1.1.0
+* Certified with Line SDK 3.1.1.
+
+## 3.1.0.0
+* Certified with Line SDK 3.1.0.
+* Updated minimum iOS version to 15.0 to match Line SDK.
+
+## 3.0.1.0
+* Certified with Line SDK 3.0.1.
+
+## 3.0.0.0
+* Certified with Line SDK 3.0.0.
+
+## 2.9.20251119.0
+* Certified with Line SDK 2.9.20251119.
+
+## 2.9.20250930.0
+* Certified with Line SDK 2.9.20250930.
+
+## 2.9.20250912.0
+* Certified with Line SDK 2.9.20250912.
+* Removed usage of deprecated `needGdprNonPersonalizedAdsTreatment` property.
+
+## 2.9.20250825.1
+* Fixed potential rewarded callback failures for rewarded ads by setting the event listener at ad load instead of show. 
+
+## 2.9.20250825.0
+* Certified with Line SDK 2.9.20250825.
+
+## 2.9.20250805.0
+* Certified with Line SDK 2.9.20250805.
+* Distributed as a static framework within the XCFramework.
+* Update ad display failed error code.
+
+## 2.9.20250512.0
+* Certified with Line SDK 2.9.20250512.
+* Removed usage of deprecated `-[FADAdInterface state]` API to determine whether a reward should be granted.
+* Updated minimum iOS version to 13.0 to match Line SDK.
+
+## 2.9.20241106.1
+* Add support for bidding.
+* Removed redundant log output when initialization was already completed.
+* Removed deprecated code paths based on the minimum supported AppLovin MAX SDK version 13.0.0.
+
+## 2.9.20241106.0
+* Certified with Line SDK 2.9.20241106.
+
+## 2.9.20241105.0
+* Certified with Line SDK 2.9.20241105.
+* Simplified API calls by removing selector checks; direct API calls are now safe with the updated min SDK version.
+
+## 2.8.20240827.1
+* Requires minimum AppLovin MAX SDK version be 13.0.0.
+* Removed COPPA support.
+* Remove deprecated native API usages.
+
+## 2.8.20240827.0
+* Certified with Line SDK 2.8.20240827.
+
+## 2.8.20240612.0
+* Certified with Line SDK 2.8.20240612.
+* Updated deprecated API usages.
+* Updated minimum Xcode requirement to 15.0.
+
 ## 2.7.20240411.0
 * Certified with Line SDK 2.7.20240411.
 

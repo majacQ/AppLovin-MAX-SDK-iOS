@@ -9,10 +9,19 @@
 import AppLovinSDK
 import MolocoSDK
 
+@available(iOS 13.0, *)
 extension MolocoAdapter: MAInterstitialAdapter
 {
     func loadInterstitialAd(for parameters: MAAdapterResponseParameters, andNotify delegate: MAInterstitialAdapterDelegate)
     {
+        // NOTE: We need this extra guard because the SDK bypasses the @available check when this function is called from Objective-C
+        guard ALUtils.isInclusiveVersion(UIDevice.current.systemVersion, forMinVersion: "13.0", maxVersion: nil) else
+        {
+            log(customEvent: .unsupportedMinimumOS)
+            delegate.didFailToLoadInterstitialAdWithError(.unspecified)
+            return
+        }
+        
         let placementId = parameters.thirdPartyAdPlacementIdentifier
         
         log(adEvent: .loading(), id: placementId, adFormat: .interstitial)
@@ -21,7 +30,9 @@ extension MolocoAdapter: MAInterstitialAdapter
         
         Task {
             interstitialDelegate = .init(adapter: self, delegate: delegate, parameters: parameters)
-            interstitialAd = await Moloco.shared.createInterstitial(for: placementId, delegate: interstitialDelegate)
+            interstitialAd = await Moloco.shared.createInterstitial(params: .init(adUnit: placementId, mediation: "max"))
+            interstitialAd?.interstitialDelegate = interstitialDelegate
+            
             guard let interstitialAd else
             {
                 log(adEvent: .loadFailed(error: .invalidConfiguration), adFormat: .interstitial)
@@ -38,11 +49,14 @@ extension MolocoAdapter: MAInterstitialAdapter
         let placementId = parameters.thirdPartyAdPlacementIdentifier
         
         log(adEvent: .showing, id: placementId, adFormat: .interstitial)
-
+        
         guard let interstitialAd, interstitialAd.isReady else
         {
+            let adapterError = MAAdapterError.init(adapterError: MAAdapterError.adDisplayFailedError,
+                                                   mediatedNetworkErrorCode: MAAdapterError.adNotReady.code.rawValue,
+                                                   mediatedNetworkErrorMessage: MAAdapterError.adNotReady.message)
             log(adEvent: .notReady, id: placementId, adFormat: .interstitial)
-            delegate.didFailToDisplayInterstitialAdWithError(.adNotReady)
+            delegate.didFailToDisplayInterstitialAdWithError(adapterError)
             return
         }
         
@@ -52,6 +66,7 @@ extension MolocoAdapter: MAInterstitialAdapter
     }
 }
 
+@available(iOS 13.0, *)
 final class MolocoInterstitialAdapterDelegate: InterstitialAdapterDelegate<MolocoAdapter>, MolocoInterstitialDelegate
 {
     func didLoad(ad: MolocoAd)
@@ -75,7 +90,9 @@ final class MolocoInterstitialAdapterDelegate: InterstitialAdapterDelegate<Moloc
     
     func failToShow(ad: MolocoAd, with error: Error?)
     {
-        let adapterError = error?.molocoAdapterError ?? .unspecified
+        let adapterError = MAAdapterError.init(adapterError: MAAdapterError.adDisplayFailedError,
+                                               mediatedNetworkErrorCode: error?.code ?? MAAdapterError.unspecified.code.rawValue,
+                                               mediatedNetworkErrorMessage: error?.localizedDescription ?? MAAdapterError.unspecified.message)
         log(adEvent: .displayFailed(error: adapterError))
         delegate?.didFailToDisplayInterstitialAdWithError(adapterError)
     }

@@ -1,5 +1,82 @@
 # Changelog
 
+## 11.5.0.0
+* Certified with InMobi SDK 11.5.0.
+
+## 11.4.1.3
+* Fixed adapter versioning for SPM
+
+## 11.4.1.2
+* Fix UI methods being called on background thread when adaptive banner enabled.
+* Add setMute support for interstitial and rewarded ads.
+
+## 11.4.1.1
+* Fix adaptive banner layout to use the standard banner size while continuing to pass adaptive dimensions through extras.
+
+## 11.4.1.0
+* Certified with InMobi SDK 11.4.1.
+
+## 11.4.0.0
+* Certified with InMobi SDK 11.4.0.
+
+## 11.3.0.1
+* Add support for adaptive banners & inline adaptive ads in both banners and MRECs. Requires AppLovin MAX SDK 13.2.0 or higher.
+
+## 11.3.0.0
+* Certified with InMobi SDK 11.3.0.
+
+## 11.2.0.0
+* Certified with InMobi SDK 11.2.0.
+
+## 11.1.1.0
+* Certified with InMobi SDK 11.1.1.
+
+## 11.1.0.0
+* Certified with InMobi SDK 11.1.0.
+
+## 11.0.0.0
+* Certified with InMobi SDK 11.1.0.
+* Updated to support InMobi new native ad integration API.
+
+## 10.8.8.0
+* Certified with InMobi SDK 10.8.8.
+* Distributed as a static framework within the XCFramework.
+
+## 10.8.6.0
+* Certified with InMobi SDK 10.8.6.
+* Update ad display failed error code.
+
+## 10.8.3.1
+* Removed requirement of the title asset for native banners and MRECs.
+
+## 10.8.3.0
+* Certified with InMobi SDK 10.8.3.
+* Removed deprecated code paths based on the minimum supported AppLovin MAX SDK version 13.0.0.
+* Fix API deprecation warnings.
+
+## 10.8.2.0
+* Certified with InMobi SDK 10.8.2.
+
+## 10.8.0.0
+* Certified with InMobi SDK 10.8.0.
+* Removed redundant log output when initialization was already completed.
+
+## 10.7.8.0
+* Certified with InMobi SDK 10.7.8.
+* Simplified API calls by removing selector checks; direct API calls are now safe with the updated min SDK version.
+
+## 10.7.5.1
+* Requires minimum AppLovin MAX SDK version be 13.0.0.
+* Removed COPPA support.
+* Remove deprecated native API usages.
+
+## 10.7.5.0
+* Certified with InMobi SDK 10.7.5.
+
+## 10.7.4.0
+* Certified with InMobi SDK 10.7.4.
+* Updated minimum Xcode requirement to 15.0.
+
 ## 10.7.2.0
 * Certified with InMobi SDK 10.7.2.
 * Remove deprecated callbacks `didStartRewardedAdVideo` and `didCompleteRewardedAdVideo`.

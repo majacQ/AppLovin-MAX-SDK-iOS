@@ -1,5 +1,64 @@
 # Changelog
 
+## 5.4.0.0
+* Certified with OguryPresage SDK 5.4.0.
+
+## 5.3.1.0
+* Certified with OguryPresage SDK 5.3.1.
+* Updated minimum iOS version to 15.0 to match OguryPresage SDK.
+
+## 5.3.0.1
+* Fixed adapter versioning for SPM
+
+## 5.3.0.0
+* Certified with OguryPresage SDK 5.3.0.
+
+## 5.2.3.0
+* Certified with OguryPresage SDK 5.2.3.
+
+## 5.2.2.0
+* Certified with OguryPresage SDK 5.2.2.
+
+## 5.2.1.0
+* Certified with OguryPresage SDK 5.2.1.
+
+## 5.2.0.0
+* Certified with OguryPresage SDK 5.2.0.
+
+## 5.1.1.0
+* Certified with OguryPresage SDK 5.1.1.
+
+## 5.1.0.1
+* Updated to pass adapter version to the `OguryMediation` object.
+
+## 5.1.0.0
+* Certified with OguryPresage SDK 5.1.0.
+* Distributed as a static framework within the XCFramework.
+* Updated ad display failed error code.
+
+## 5.0.2.0
+* Certified with OguryPresage SDK 5.0.2.
+
+## 5.0.1.0
+* Certified with OguryPresage SDK 5.0.1.
+
+## 5.0.0.0
+* Certified with OguryPresage SDK 5.0.0.
+* Updated minimum iOS version to 12.0 to match OguryPresage SDK.
+* Updated minimum Xcode requirement to 15.3 to match OguryPresage SDK.
+
+## 4.4.2.0
+* Certified with OguryPresage SDK 4.4.2.
+
+## 4.4.1.0
+* Certified with OguryPresage SDK 4.4.1.
+
+## 4.4.0.1
+* Add support for passing in MAX SDK name and version.
+
+## 4.4.0.0
+* Certified with OguryPresage SDK 4.4.0.
+
 ## 4.3.0.0
 * Certified with OguryPresage SDK 4.3.0.
 * Updated minimum Xcode requirement to 15.0.

@@ -1,5 +1,99 @@
 # Changelog
 
+## 8.5.2.0
+* Certified with Fyber SDK 8.5.2.
+
+## 8.5.1.0
+* Certified with Fyber SDK 8.5.1.
+
+## 8.5.0.0
+* Certified with Fyber SDK 8.5.0.
+
+## 8.4.10.1
+* Fixed adapter versioning for SPM
+
+## 8.4.10.0
+* Certified with Fyber SDK 8.4.10.
+
+## 8.4.9.0
+* Certified with Fyber SDK 8.4.9.
+
+## 8.4.8.0
+* Certified with Fyber SDK 8.4.8.
+* Updated minimum iOS version to 15.0 to match Fyber SDK.
+* Updated minimum Xcode requirement to 26.
+
+## 8.4.7.0
+* Certified with Fyber SDK 8.4.7.
+
+## 8.4.6.0
+* Certified with Fyber SDK 8.4.6.
+
+## 8.4.5.0
+* Certified with Fyber SDK 8.4.5.
+
+## 8.4.4.0
+* Certified with Fyber SDK 8.4.4.
+
+## 8.4.3.0
+* Certified with Fyber SDK 8.4.3.
+
+## 8.4.2.0
+* Certified with Fyber SDK 8.4.2.
+
+## 8.4.1.0
+* Certified with Fyber SDK 8.4.1.
+
+## 8.4.0.0
+* Certified with Fyber SDK 8.4.0.
+* Distributed as a static framework within the XCFramework.
+
+## 8.3.8.0
+* Certified with Fyber SDK 8.3.8.
+* Update ad display failed error code.
+
+## 8.3.7.0
+* Certified with Fyber SDK 8.3.7.
+* Updated minimum iOS version to 13.0 to match Fyber SDK.
+
+## 8.3.6.0
+* Certified with Fyber SDK 8.3.6.
+* Removed deprecated code paths based on the minimum supported AppLovin MAX SDK version 13.0.0.
+
+## 8.3.5.1
+* Implement `IAAdDidExpire:` to handle ad expiration by failing the ad display to ensure that the ad display cycle is complete.
+
+## 8.3.5.0
+* Certified with Fyber SDK 8.3.5.
+
+## 8.3.4.0
+* Certified with Fyber SDK 8.3.4.
+
+## 8.3.3.0
+* Certified with Fyber SDK 8.3.3.
+* Simplified API calls by removing selector checks; direct API calls are now safe with the updated min SDK version.
+* Removed redundant log output when initialization was already completed.
+
+## 8.3.2.1
+* Requires minimum AppLovin MAX SDK version be 13.0.0.
+* Removed COPPA support.
+
+## 8.3.2.0
+* Certified with Fyber SDK 8.3.2.
+
+## 8.3.1.1
+* Remove String validation for signal.
+* Remove calling `didFailToDisplayRewardedAdWithError:` in the `IAVideoContentController :videoInterruptedWithError:` callback which occurs when the ad video is buffering.
+
+## 8.3.1.0
+* Certified with Fyber SDK 8.3.1.
+
+## 8.3.0.0
+* Certified with Fyber SDK 8.3.0.
+* Remove deprecated API usages.
+* Updated minimum Xcode requirement to 15.0.
+* Updated the minimum required iOS version to 12.0 to match Fyber SDK. 
+
 ## 8.2.8.0
 * Certified with Fyber SDK 8.2.8.
 * Remove deprecated callbacks `didStartRewardedAdVideo` and `didCompleteRewardedAdVideo`.

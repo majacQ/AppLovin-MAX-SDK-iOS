@@ -1,5 +1,56 @@
 # Changelog
 
+## 23.2.3.0
+* Certified with Smaato SDK 23.2.3.
+
+## 23.2.2.0
+* Certified with Smaato SDK 23.2.2.
+
+## 23.2.1.1
+* Fixed adapter versioning for SPM
+
+## 23.2.1.0
+* Certified with Smaato SDK 23.2.1.
+
+## 23.2.0.0
+* Certified with Smaato SDK 23.2.0.
+
+## 23.1.0.0
+* Certified with Smaato SDK 23.1.0.
+
+## 23.0.1.0
+* Certified with Smaato SDK 23.0.1.
+* Distributed as a static framework within the XCFramework.
+* Updated ad display failed error code.
+
+## 22.9.3.1
+* Updated minimum iOS version to 12.0.
+* Removed requirement of the title asset for native banners and MRECs.
+
+## 22.9.3.0
+* Certified with Smaato SDK 22.9.3.
+* Removed deprecated code paths based on the minimum supported AppLovin MAX SDK version 13.0.0.
+
+## 22.9.2.0
+* Certified with Smaato SDK 22.9.2.
+
+## 22.9.1.0
+* Certified with Smaato SDK 22.9.1.
+* Simplified API calls by removing selector checks; direct API calls are now safe with the updated min SDK version.
+
+## 22.9.0.0
+* Certified with Smaato SDK 22.9.0.
+
+## 22.8.4.1
+* Requires minimum AppLovin MAX SDK version be 13.0.0.
+* Removed COPPA support.
+* Remove deprecated native API usages.
+
+## 22.8.4.0
+* Certified with Smaato SDK 22.8.4.
+* Remove deprecated callbacks `didStartRewardedAdVideo`, `didCompleteRewardedAdVideo`.
+* Updated minimum Xcode requirement to 15.0.
+
 ## 22.8.3.0
 * Certified with Smaato SDK 22.8.3.
 
